@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": "cc28",
+      "name": "qwerty",
+      "email": "23rg@gmail.com",
+      "phone": "123456",
+      "website": "34rfv"
+    },
+    {
+      "id": "2e3f",
+      "name": "qwerty",
+      "email": "23rg@gmail.com",
+      "phone": "123456",
+      "website": ""
+    },
+    {
+      "id": "bbde",
+      "name": "sdfjk",
+      "email": "7thj@gmail.com",
+      "phone": "345678",
+      "website": ""
+    }
+  ]
+}

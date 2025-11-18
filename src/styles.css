@@ -1,0 +1,43 @@
+/* Basic responsive styling and a tiny spinner */
+/* Layout */
+* { box-sizing: border-box; font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
+body { margin:0; background:#f7f7fb; color:#111827; }
+.app { min-height:100vh; display:flex; flex-direction:column; }
+.nav { display:flex; justify-content:space-between; align-items:center; padding:14px 16px; background:white; border-bottom:1px solid #eee; }
+.brand { font-weight:700; text-decoration:none; color:#111827; font-size:18px; }
+.container { padding:18px; max-width:1000px; margin:16px auto; width:100%; flex:1; }
+.footer { text-align:center; padding:16px; font-size:13px; color:#666; }
+
+/* Buttons */
+.btn { background:#2563eb; color:white; padding:8px 12px; border-radius:8px; border:none; text-decoration:none; cursor:pointer; display:inline-block; }
+.btn.small { padding:6px 8px; font-size:14px; }
+.btn.danger { background:#dc2626; }
+
+/* Table */
+.table-wrap { overflow:auto; background:white; border-radius:10px; padding:8px; border:1px solid #eee; }
+.users-table { width:100%; border-collapse:collapse; min-width:600px; }
+.users-table th, .users-table td { padding:12px 10px; text-align:left; border-bottom:1px solid #f0f0f3; }
+.users-table th { background:#fafafa; font-weight:600; }
+
+/* Forms */
+.form { display:flex; flex-direction:column; gap:10px; max-width:520px; background:white; padding:16px; border-radius:10px; border:1px solid #eee; }
+.form label { display:flex; flex-direction:column; font-size:14px; color:#333; }
+.form input { padding:8px 10px; border-radius:8px; border:1px solid #ddd; outline:none; }
+
+/* Small helpers */
+.error { background:#fff1f2; color:#9f1239; padding:10px; border-radius:8px; border:1px solid #fbcfe8; margin-bottom:10px; }
+.actions { display:flex; gap:8px; }
+
+/* Spinner */
+.spinner { display:flex; gap:6px; align-items:center; justify-content:center; padding:30px; }
+.spinner div { width:10px; height:10px; border-radius:50%; background:#2563eb; animation:spin 0.8s linear infinite; opacity:0.7; }
+.spinner div:nth-child(2) { animation-delay:0.2s }
+.spinner div:nth-child(3) { animation-delay:0.4s }
+@keyframes spin { 0% { transform:translateY(0);} 50% { transform:translateY(-8px);} 100% { transform:translateY(0);} }
+
+/* Responsive */
+@media (max-width:700px) {
+  .users-table { min-width:0; }
+  .nav { padding:12px; }
+  .brand { font-size:16px; }
+}
